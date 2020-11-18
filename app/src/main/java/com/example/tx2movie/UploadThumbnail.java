@@ -1,4 +1,4 @@
-package com.example.tx2movie;
+    package com.example.tx2movie;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -204,7 +204,7 @@ public class UploadThumbnail extends AppCompatActivity implements View.OnClickLi
             }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
-                    double progress = (100*snapshot.getBytesTransferred()/snapshot.getTotalByteCount());
+                    double progress = (100 * snapshot.getBytesTransferred() / snapshot.getTotalByteCount());
                     progressDialog.setMessage("Upload "+ ((int)progress)+"...");
                 }
             });
