@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "401956045501",
+    "firebase_url": "https://tx2movie-c3f44.firebaseio.com",
+    "project_id": "tx2movie-c3f44",
+    "storage_bucket": "tx2movie-c3f44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401956045501:android:47acf21ea294dd1fec6dd4",
+        "android_client_info": {
+          "package_name": "com.example.tx2movie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401956045501-qbkofrlt9n1517s386u32tgi7fmlva76.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tx2movie",
+            "certificate_hash": "44a3820b17f54307c86000061a2d64974de634ff"
+          }
+        },
+        {
+          "client_id": "401956045501-72nlt640js26ocqakldgr7ao46akd5no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeQZpECyxZHnMemqBI9KhF9uNc6sdDrKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401956045501-72nlt640js26ocqakldgr7ao46akd5no.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

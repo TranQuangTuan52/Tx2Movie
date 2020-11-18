@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadThumbnail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Choose movie type"
+            android:fontFamily="monospace"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:id="@+id/radioGroup"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Type"
+                android:checked="true"
+                android:fontFamily="monospace"
+                android:id="@+id/rbNoType"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lates movies"
+                android:fontFamily="monospace"
+                android:id="@+id/rbLatesMovie"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best Popular movie"
+                android:fontFamily="monospace"
+                android:id="@+id/rbBestPopularMovie"/>
+            <RadioButton
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slide movie"
+                android:id="@+id/rbSlideMovie"/>
+
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@null"
+                android:fontFamily="monospace"
+                android:text="Upload thumbnail"
+                android:id="@+id/uploadThumbnail"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Thumbnail selected"
+                android:id="@+id/tvThumbnailSelected"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+       <androidx.cardview.widget.CardView
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:layout_marginVertical="8dp"
+           android:layout_gravity="center"
+           app:cardCornerRadius="4dp">
+           <ImageView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:id="@+id/imgThumbnail"
+
+               android:background="#F4B961"
+               />
+       </androidx.cardview.widget.CardView>
+        <Button
+            android:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_button"
+            android:text="Upload"
+            android:id="@+id/btnUpload"
+            android:textColor="@color/black"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+</RelativeLayout>
